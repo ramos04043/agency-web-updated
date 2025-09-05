@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agency - Transforming Business with Artificial Intelligence</title>
+    <meta name="description" content="Leading AI agency specializing in chatbots, workflow automation, and AI-powered tools to transform your business.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+                var theme = saved || (prefersLight ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) { /* noop */ }
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">AI Agency</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="case-study.html" class="nav-link">Case Studies</a>
+                <a href="blogs.html" class="nav-link">Blog</a>
+                <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                    <span id="theme-label" style="font-size:12px;">Theme</span>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transform Your Business with <span class="highlight">AI Innovation</span></h1>
+                    <p class="hero-subtitle">We help companies leverage cutting-edge artificial intelligence to automate workflows, enhance customer experiences, and drive unprecedented growth.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                        <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+  <div class="hero-image-placeholder">
+    <div class="ai-illustration">
+      <!-- Cute Robot Agent -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+        <!-- Head -->
+        <rect x="50" y="30" width="100" height="80" rx="20" fill="#222" stroke="#673DE6" stroke-width="4"/>
+        <!-- Eyes -->
+        <circle cx="75" cy="70" r="10" fill="#00C6FF"/>
+        <circle cx="125" cy="70" r="10" fill="#00C6FF"/>
+        <!-- Mouth -->
+        <rect x="80" y="95" width="40" height="8" rx="4" fill="#FF7C3E"/>
+        <!-- Antenna -->
+        <line x1="100" y1="20" x2="100" y2="30" stroke="#FF7C3E" stroke-width="4"/>
+        <circle cx="100" cy="15" r="6" fill="#22DDAA"/>
+        <!-- Body -->
+        <rect x="65" y="115" width="70" height="50" rx="15" fill="#333" stroke="#673DE6" stroke-width="4"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Our AI Solutions</h2>
+                <p class="section-subtitle">Discover how our AI services can transform your business operations</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>AI Automation</h3>
+                        <p>Automate workflows and operations with intelligent, reliable AI-driven processes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Website Development</h3>
+                        <p>Modern, fast, and responsive websites optimized for SEO and conversions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧩</div>
+                        <h3>Web Application</h3>
+                        <p>Secure, scalable web apps and dashboards tailored to your business needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>Chatbots</h3>
+                        <p>24/7 assistants for support, lead qualification, and guided workflows.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Digital Marketing</h3>
+                        <p>SEO, ads, content, and funnel optimization to drive measurable growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Preview -->
+        <section class="tool-preview">
+            <div class="container">
+                <h2 class="section-title">Featured AI Tools</h2>
+                <p class="section-subtitle">Try our cutting-edge AI tools designed for modern businesses</p>
+                <div class="tool-showcase">
+                    <div class="tool-demo">
+                        <h3>AI Assistant Demo</h3>
+                        <div class="demo-placeholder">
+                            <p>Interactive AI tool would be embedded here</p>
+                            <div class="demo-visual">
+                                <div class="chat-bubble">Hello! How can I help you today?</div>
+                                <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="tool.html" class="btn btn-primary">Explore All Tools</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"AI Agency transformed our customer service with their intelligent chatbot. We've seen a 40% reduction in support tickets."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CEO, TechStart Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The workflow automation solution saved us 20 hours per week. ROI was achieved within the first month."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Operations Manager, GrowthCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Their AI content tools helped us scale our content production by 300% while maintaining quality."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <span>Marketing Director, CreativeFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Join hundreds of companies already using our AI solutions to drive growth and efficiency.</p>
+                    <a href="#contact" class="btn btn-primary">Start Your AI Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to discuss your AI project? We're here to help.</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Talk</h3>
+                        <p>We'd love to hear about your project and how we can help you achieve your goals with AI.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>hello@aiagency.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                     <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" title="Enter a valid phone number (10–15 digits)" required>
+              </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" minlength="20" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>AI Agency</h3>
+                        <p>Transforming businesses with cutting-edge artificial intelligence solutions.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Web Application</a></li>
+                        <li><a href="services.html">Chatbots</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot -->
+     <!-- Floating Chatbot -->
+    <style>
+.floating-chatbot {
+  position: fixed;
+  bottom: 16px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.chatbot-button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
+}
+
+.chatbot-tooltip {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* === Chatbot Window === */
+.chatbot-window {
+  width: 280px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  position: fixed;
+  bottom: 50px;
+  right: 120px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chatbot-window.hidden { display: none; }
+
+.chatbot-header {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Messages Area */
+.chatbot-messages {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* Message Bubbles */
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  max-width: 75%;
+  word-wrap: break-word;
+  clear: both;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message.bot {
+  background: #f3f4f6;
+  color: #111827;
+  float: left;
+  border-bottom-left-radius: 6px;
+  animation: fadeInLeft 0.3s ease;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  float: right;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+  animation: fadeInRight 0.3s ease;
+}
+
+/* Typing Animation */
+.typing {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 18px;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.typing::after {
+  content: '...';
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* Input Area */
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.chatbot-input button:hover {
+  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .chatbot-window {
+    width: 90%;
+    max-height: 70%;
+    right: 5%;
+    bottom: 80px;
+  }
+  .chatbot-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+</style>
+<div class="floating-chatbot">
+  <div class="chatbot-tooltip">Chat with us</div>
+  <button class="chatbot-button">💬</button>
+</div>
+
+<div class="chatbot-window hidden" id="chatbot-window">
+  <div class="chatbot-header">
+    AI Assistant
+    <button id="chatbot-close">✖</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type a message...">
+    <button id="chatbot-send">➤</button>
+  </div>
+</div>
+<script>
+  // Theme toggle for desktop and mobile
+  (function() {
+    var desktopBtn = document.getElementById('theme-toggle');
+    var mobileBtn = document.getElementById('theme-toggle-mobile');
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch(e){}
+    }
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+    if (desktopBtn) desktopBtn.addEventListener('click', toggleTheme);
+    if (mobileBtn) mobileBtn.addEventListener('click', toggleTheme);
+  })();
+</script>
+<script src="js/chatbot.js"></script>
+    <script>
+        // Minimal form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (name && email && message.length >= 20) {
+                alert('Thank you for your message! We\'ll get back to you soon.');
+                this.reset();
+            }
+        });
+        
+        // Mobile navigation toggle
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - AI Agency</title>
+    <meta name="description" content="Explore our successful AI implementation case studies and see how we've helped businesses transform with artificial intelligence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+                var theme = saved || (prefersLight ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) { /* noop */ }
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">AI Agency</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="case-study.html" class="nav-link active">Case Studies</a>
+                <a href="blogs.html" class="nav-link">Blog</a>
+                <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                    <span id="theme-label" style="font-size:12px;">Theme</span>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Success Stories</h1>
+                <p class="page-subtitle">See how we've helped businesses transform and achieve remarkable results with AI</p>
+            </div>
+        </section>
+
+        <section class="case-studies-filter">
+            <div class="container">
+                <div class="filter-section">
+                    <h3>Filter by Industry</h3>
+                    <div class="filter-tags">
+                        <button class="filter-tag active" data-filter="all">All</button>
+                        <button class="filter-tag" data-filter="ecommerce">E-commerce</button>
+                        <button class="filter-tag" data-filter="healthcare">Healthcare</button>
+                        <button class="filter-tag" data-filter="finance">Finance</button>
+                        <button class="filter-tag" data-filter="manufacturing">Manufacturing</button>
+                        <button class="filter-tag" data-filter="education">Education</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies-grid">
+            <div class="container">
+                <div class="cases-grid">
+                    <div class="case-study-card" data-category="ecommerce">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">E-commerce</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>40% Increase in Customer Satisfaction</h3>
+                            <p class="case-client">TechMart - Online Electronics Retailer</p>
+                            <p class="case-description">Implemented an AI-powered chatbot that reduced response time from hours to seconds, handling 80% of customer inquiries automatically while maintaining personalized service.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">40%</span>
+                                    <span class="metric-label">↑ Satisfaction</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">80%</span>
+                                    <span class="metric-label">Auto-resolved</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">24/7</span>
+                                    <span class="metric-label">Availability</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="healthcare">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">Healthcare</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>50% Reduction in Administrative Tasks</h3>
+                            <p class="case-client">MediCare Plus - Healthcare Network</p>
+                            <p class="case-description">Automated patient scheduling, insurance verification, and appointment reminders using AI workflow automation, freeing up staff to focus on patient care.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">50%</span>
+                                    <span class="metric-label">↓ Admin Work</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">30%</span>
+                                    <span class="metric-label">↑ Efficiency</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">$200K</span>
+                                    <span class="metric-label">Annual Savings</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="finance">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">Finance</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>90% Fraud Detection Accuracy</h3>
+                            <p class="case-client">SecureBank - Regional Banking Institution</p>
+                            <p class="case-description">Deployed machine learning models for real-time fraud detection, dramatically improving security while reducing false positives that frustrated customers.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">90%</span>
+                                    <span class="metric-label">Fraud Detection</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">75%</span>
+                                    <span class="metric-label">↓ False Positives</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.5M</span>
+                                    <span class="metric-label">Protected</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="manufacturing">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">Manufacturing</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>25% Reduction in Equipment Downtime</h3>
+                            <p class="case-client">IndustrialTech - Manufacturing Corporation</p>
+                            <p class="case-description">Implemented predictive maintenance using IoT sensors and AI analytics to prevent equipment failures before they occur, saving millions in downtime costs.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">25%</span>
+                                    <span class="metric-label">↓ Downtime</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">$3M</span>
+                                    <span class="metric-label">Savings/Year</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">99.2%</span>
+                                    <span class="metric-label">Uptime</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="education">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">Education</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>60% Improvement in Student Engagement</h3>
+                            <p class="case-client">EduTech University - Online Learning Platform</p>
+                            <p class="case-description">Created personalized learning paths using AI recommendation systems, adapting content difficulty and pacing to individual student needs and learning styles.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">60%</span>
+                                    <span class="metric-label">↑ Engagement</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">35%</span>
+                                    <span class="metric-label">↑ Completion</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">10K+</span>
+                                    <span class="metric-label">Students</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="ecommerce">
+                        <div class="case-image-placeholder">
+                            <div class="case-category-badge">E-commerce</div>
+                        </div>
+                        <div class="case-content">
+                            <h3>300% Increase in Content Production</h3>
+                            <p class="case-client">FashionForward - Online Fashion Retailer</p>
+                            <p class="case-description">Automated product descriptions, social media content, and email campaigns using AI content tools while maintaining brand voice and quality standards.</p>
+                            <div class="case-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">300%</span>
+                                    <span class="metric-label">↑ Content</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">70%</span>
+                                    <span class="metric-label">Time Saved</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">45%</span>
+                                    <span class="metric-label">↑ Conversion</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Write Your Success Story?</h2>
+                    <p>Join these successful companies and transform your business with our AI solutions.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>AI Agency</h3>
+                        <p>Transforming businesses with cutting-edge artificial intelligence solutions.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Web Application</a></li>
+                        <li><a href="services.html">Chatbots</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot -->
+    <style>
+.floating-chatbot {
+  position: fixed;
+  bottom: 16px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.chatbot-button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
+}
+
+.chatbot-tooltip {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* === Chatbot Window === */
+.chatbot-window {
+  width: 280px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  position: fixed;
+  bottom: 50px;
+  right: 120px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chatbot-window.hidden { display: none; }
+
+.chatbot-header {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Messages Area */
+.chatbot-messages {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* Message Bubbles */
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  max-width: 75%;
+  word-wrap: break-word;
+  clear: both;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message.bot {
+  background: #f3f4f6;
+  color: #111827;
+  float: left;
+  border-bottom-left-radius: 6px;
+  animation: fadeInLeft 0.3s ease;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  float: right;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+  animation: fadeInRight 0.3s ease;
+}
+
+/* Typing Animation */
+.typing {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 18px;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.typing::after {
+  content: '...';
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* Input Area */
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.chatbot-input button:hover {
+  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .chatbot-window {
+    width: 90%;
+    max-height: 70%;
+    right: 5%;
+    bottom: 80px;
+  }
+  .chatbot-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+</style>
+<div class="floating-chatbot">
+  <div class="chatbot-tooltip">Chat with us</div>
+  <button class="chatbot-button">💬</button>
+</div>
+
+<div class="chatbot-window hidden" id="chatbot-window">
+  <div class="chatbot-header">
+    AI Assistant
+    <button id="chatbot-close">✖</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type a message...">
+    <button id="chatbot-send">➤</button>
+  </div>
+</div>
+<script>
+  // Theme toggle for desktop and mobile
+  (function() {
+    var desktopBtn = document.getElementById('theme-toggle');
+    var mobileBtn = document.getElementById('theme-toggle-mobile');
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch(e){}
+    }
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+    if (desktopBtn) desktopBtn.addEventListener('click', toggleTheme);
+    if (mobileBtn) mobileBtn.addEventListener('click', toggleTheme);
+  })();
+</script>
+<script src="js/chatbot.js"></script>
+<script>
+    // Mobile navigation toggle
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+        document.getElementById('nav-menu').classList.toggle('active');
+    });
+
+    // Case study filtering
+    document.querySelectorAll('.filter-tag').forEach(tag => {
+        tag.addEventListener('click', function() {
+            const filter = this.dataset.filter;
+            document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            document.querySelectorAll('.case-study-card').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

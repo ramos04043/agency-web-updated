@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - AI Agency</title>
+    <meta name="description" content="Stay updated with the latest AI trends, insights, and best practices from our expert team of AI specialists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+                var theme = saved || (prefersLight ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) { /* noop */ }
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">AI Agency</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="case-study.html" class="nav-link">Case Studies</a>
+                <a href="blogs.html" class="nav-link active">Blog</a>
+                <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                    <span id="theme-label" style="font-size:12px;">Theme</span>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
+                    <span class="moon">🌙</span>
+                    <span class="sun">☀️</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">AI Insights & Updates</h1>
+                <p class="page-subtitle">Stay ahead of the curve with expert insights, industry trends, and practical guides from our specialists</p>
+            </div>
+        </section>
+
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Categories</h3>
+                        <ul class="category-list" id="category-list">
+                            <!-- Populated by js/blogs.js -->
+                        </ul>
+                    </div>
+                    <div class="sidebar-section" id="toc">
+                        <h3>Quick Navigation</h3>
+                        <div class="tag-cloud" id="tag-cloud">
+                            <!-- Tags populated by js/blogs.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-main">
+                    <div class="blog-posts-grid" id="blog-posts-grid">
+                        <!-- Populated by js/blogs.js -->
+                    </div>
+
+                    <div class="pagination" id="pagination" style="display:none;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated with AI Trends</h2>
+                    <p>Get the latest AI insights, industry updates, and exclusive content delivered to your inbox weekly.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>AI Agency</h3>
+                        <p>Transforming businesses with cutting-edge artificial intelligence solutions.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">AI Automation</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Web Application</a></li>
+                        <li><a href="services.html">Chatbots</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot -->
+<div class="floating-chatbot">
+  <div class="chatbot-tooltip">Chat with us</div>
+  <button class="chatbot-button">💬</button>
+</div>
+
+<div id="chatbot-window">
+  <div class="chatbot-header">
+    <span>AI Assistant</span>
+    <button id="chatbot-close">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages"></div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type your message..."/>
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+
+<style>
+  /* Chatbot styles */
+  .floating-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .chatbot-tooltip {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .chatbot-button {
+    background: #4f46e5;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  #chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 1001;
+  }
+  .chatbot-header {
+    background: #4f46e5;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+  .chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+  .message {
+    margin: 6px 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  .user { background: #e0e7ff; align-self: flex-end; }
+  .bot { background: #f3f4f6; align-self: flex-start; }
+
+  /* Input */
+  .chatbot-input { display: flex; border-top: 1px solid #ddd; background: #f9fafb; }
+  .chatbot-input input { flex: 1; border: none; padding: 12px; font-size: 14px; background: #f9fafb; color: #111827; outline: none; }
+  .chatbot-input button { background: #4f46e5; border: none; color: #fff; padding: 12px 16px; cursor: pointer; border-radius: 0; font-weight: 600; }
+  .chatbot-input button:hover { background: #4338ca; }
+
+  /* Bubbles */
+  .message { margin: 8px 0; padding: 10px 14px; border-radius: 18px; max-width: 75%; word-wrap: break-word; display: inline-block; clear: both; }
+  .message.bot { background: #000000; float: left; border-bottom-left-radius: 4px; }
+  .message.user { background: #4f46e5; color: #fff; float: right; border-bottom-right-radius: 4px; text-align: right; }
+</style>
+
+<script>
+  // Theme toggle for desktop and mobile
+  (function() {
+    var desktopBtn = document.getElementById('theme-toggle');
+    var mobileBtn = document.getElementById('theme-toggle-mobile');
+    function setTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      try { localStorage.setItem('theme', t); } catch(e){}
+    }
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+    if (desktopBtn) desktopBtn.addEventListener('click', toggleTheme);
+    if (mobileBtn) mobileBtn.addEventListener('click', toggleTheme);
+  })();
+</script>
+<script src="js/chatbot.js"></script>
+<script src="js/blogs.js"></script>
+<script>
+    // Mobile navigation toggle
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+        document.getElementById('nav-menu').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
